@@ -115,7 +115,6 @@ export class AppService implements OnModuleInit {
         }
       }
     }
-    console.log(configurations);
     return configurations.sort((a, b) => b.price - a.price);
   }
 

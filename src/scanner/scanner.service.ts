@@ -24,7 +24,6 @@ export class ScannerService {
   }
 
   async update(id: string, updateScannerDto: UpdateScannerDto) {
-    console.log(updateScannerDto);
     return await this.scannerModel
       .updateOne({ _id: id }, updateScannerDto)
       .exec();

@@ -27,7 +27,6 @@ export class ScannerController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    console.log(id);
     return this.scannerService.findOne(id);
   }
 
